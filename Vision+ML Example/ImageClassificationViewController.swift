@@ -1,31 +1,80 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-View controller for selecting images and applying Vision + Core ML processing.
-*/
+//
+//  ImageClassificationViewController.swift
+//  Vision+ML Example
+//
+//  Created by Bahar on 25.11.2020.
+//  Copyright © 2020 Apple. All rights reserved.
+//
 
 import UIKit
 import CoreML
 import Vision
 import ImageIO
+import Firebase
+
 
 class ImageClassificationViewController: UIViewController {
     // MARK: - IBOutlets
+
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var classificationLabel: UILabel!
+
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+
+        
+    }
+    
+    func FotolarDatabase(for image: UIImage) {
+            
+            guard let uploadData = UIImageJPEGRepresentation(image, 80) else { return }
+            
+            navigationItem.rightBarButtonItem?.isEnabled = false
+            
+            let filename = NSUUID().uuidString
+            
+            let storageRef = Storage.storage().reference().child("posts").child(filename)
+            storageRef.putData(uploadData, metadata: nil) { (metadata, error) in
+                
+                if let error = error {
+                    self.navigationItem.rightBarButtonItem?.isEnabled = true
+                    print("Failed to upload post image:", error)
+                    return
+                }
+                
+                storageRef.downloadURL(completion: { (downloadURL, error) in
+                    if let error = error {
+                        print("Failed to fetch downloadURL", error)
+                        return
+                    }
+                    let imageUrl = downloadURL?.absoluteString
+                    
+                    let post = ["image": imageUrl!] as  [String : Any]
+                    Database.database().reference().child("resimler").childByAutoId().setValue(post)
+                    
+                    print("Succesfully uploaded post image:", imageUrl)
+                    
+                })
+            }
+        }
+
     // MARK: - Image Classification
+    // Model'in kurulumu
+    // CoreML modeline bir resim analizi çağrısı yapmak için Vision CoreMLRequest olusturulur. Lazy olmasının sebebi nesnenin kullanımına ihtiyac oldugu anda olusturulmasını saglamaktır.
+    
+    // Model çalıştırılıp sonuç döndüğünde proseccClassifications metoduna geçilir.
+    // ML modeli input olarak belirli bir en boy aralıgında resimler bekler ama yuklenen fotoğraflar farklı en boy oranında olabilir.
+    //Burada Vision kutuphanesi resmi ölçeklendirmek ve kırmak icin secenek sunar. (imageCropAndScaleOption )
     
     /// - Tag: MLModelSetup
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
             /*
              Use the Swift class `MobileNet` Core ML generates from the model.
-             To use a different Core ML classifier model, add it to the project
-             and replace `MobileNet` with that model's generated Swift class.
              */
             let model = try VNCoreMLModel(for: MobileNet().model)
             
@@ -40,6 +89,11 @@ class ImageClassificationViewController: UIViewController {
     }()
     
     /// - Tag: PerformRequests
+    // resim yuklendiginde UpdateClassifications methodu cagrılır. Bu metotta VNImageRequestHandler objesi olusturulur.
+    // VNImageRequestHandler resme iliskin resim analizlerini yonetir. Parametre olarak işlenecek resmi ve resmin oryantasyonunu alır.
+    // perform methodu cagrılarak Vision request sıraya sokulur.
+    
+    
     func updateClassifications(for image: UIImage) {
         classificationLabel.text = "Classifying..."
         
@@ -62,6 +116,11 @@ class ImageClassificationViewController: UIViewController {
     }
     
     /// Updates the UI with the results of the classification.
+    ///  Model her cağrıldığında çalışan metod.
+    ///  Model calıstıgında dönen VNRequest'in içinde results dizisi bulunmaktadır.
+    ///  Bu dizide resmin tahmin sonucları yer almaktadır. En emin olunan sınıf en üsttedir.
+    ///  Prefix metodu ile olasılıgı en yuksek olan 2 sınıf alınarak ekranda gosterilmektedir.
+    ///
     /// - Tag: ProcessClassifications
     func processClassifications(for request: VNRequest, error: Error?) {
         DispatchQueue.main.async {
@@ -127,6 +186,7 @@ extension ImageClassificationViewController: UIImagePickerControllerDelegate, UI
         // We always expect `imagePickerController(:didFinishPickingMediaWithInfo:)` to supply the original image.
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         imageView.image = image
+        FotolarDatabase(for: image)
         updateClassifications(for: image)
     }
 }

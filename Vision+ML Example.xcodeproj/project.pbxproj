@@ -7,27 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C03C65F25BF26E500B1CC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11063F681EC0EECC0033EE6D /* Assets.xcassets */; };
+		0CC59EB3257D28BA000E0D59 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC59EB2257D28BA000E0D59 /* TimelineViewController.swift */; };
+		0CC59ED8257D2CE6000E0D59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC59ED7257D2CE6000E0D59 /* GoogleService-Info.plist */; };
+		0CD3FB842583B384009840C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD3FB832583B384009840C7 /* Main.storyboard */; };
+		0CD3FB8D2584C7E5009840C7 /* CollectionViewHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD3FB8C2584C7E5009840C7 /* CollectionViewHucre.swift */; };
 		11063F621EC0EECC0033EE6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11063F611EC0EECC0033EE6D /* AppDelegate.swift */; };
 		11063F641EC0EECC0033EE6D /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11063F631EC0EECC0033EE6D /* ImageClassificationViewController.swift */; };
-		11063F671EC0EECC0033EE6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11063F651EC0EECC0033EE6D /* Main.storyboard */; };
-		11063F691EC0EECC0033EE6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11063F681EC0EECC0033EE6D /* Assets.xcassets */; };
 		11063F741EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11063F731EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		113695D81EC1151400CA6C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113695D61EC1151400CA6C43 /* LaunchScreen.storyboard */; };
 		C89947DA1F4639D6005C0A19 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C89947D91F4639A8005C0A19 /* MobileNet.mlmodel */; };
+		CED8AA1852A1FCD1B8ABE8BA /* Pods_Vision_ML_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880F6225690AEB07DF16D687 /* Pods_Vision_ML_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0463864141D2ED9BE8FA36FE /* Pods-Vision+ML Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vision+ML Example.debug.xcconfig"; path = "Target Support Files/Pods-Vision+ML Example/Pods-Vision+ML Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0CC59EB2257D28BA000E0D59 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		0CC59ED7257D2CE6000E0D59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0CD3FB832583B384009840C7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0CD3FB8C2584C7E5009840C7 /* CollectionViewHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHucre.swift; sourceTree = "<group>"; };
 		11063F5E1EC0EECC0033EE6D /* Vision+ML Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision+ML Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11063F611EC0EECC0033EE6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11063F631EC0EECC0033EE6D /* ImageClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewController.swift; sourceTree = "<group>"; };
-		11063F661EC0EECC0033EE6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11063F681EC0EECC0033EE6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11063F6D1EC0EECC0033EE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11063F731EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		113695D71EC1151400CA6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A9558E70A9563BA000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		A9666960A9666AD000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
-		C858E5CC1ECA99CC006C5CAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6EACF9C4A54F39FB8A6C83FD /* Pods-Vision+ML Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vision+ML Example.release.xcconfig"; path = "Target Support Files/Pods-Vision+ML Example/Pods-Vision+ML Example.release.xcconfig"; sourceTree = "<group>"; };
+		880F6225690AEB07DF16D687 /* Pods_Vision_ML_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vision_ML_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C858E5CC1ECA99CC006C5CAA /* CoreML.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CoreML.md; sourceTree = "<group>"; };
 		C89947D91F4639A8005C0A19 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = Model/MobileNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED8AA1852A1FCD1B8ABE8BA /* Pods_Vision_ML_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,11 +54,12 @@
 		11063F551EC0EECC0033EE6D = {
 			isa = PBXGroup;
 			children = (
-				C858E5CC1ECA99CC006C5CAA /* README.md */,
+				C858E5CC1ECA99CC006C5CAA /* CoreML.md */,
 				11063F601EC0EECC0033EE6D /* Vision+ML Example */,
 				11063F5F1EC0EECC0033EE6D /* Products */,
 				A9563AD0A9557D1000000001 /* Configuration */,
-				A96664E0A96664B000000001 /* LICENSE */,
+				894F5A9180E93FB2519AEE0F /* Pods */,
+				F54C7A83AB48E7DF8D9A3CEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,28 +77,30 @@
 				11063F611EC0EECC0033EE6D /* AppDelegate.swift */,
 				11063F631EC0EECC0033EE6D /* ImageClassificationViewController.swift */,
 				11063F731EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				0CC59EB2257D28BA000E0D59 /* TimelineViewController.swift */,
+				0CD3FB8C2584C7E5009840C7 /* CollectionViewHucre.swift */,
+				0CD3FB832583B384009840C7 /* Main.storyboard */,
+				0CC59ED7257D2CE6000E0D59 /* GoogleService-Info.plist */,
 				C89947D91F4639A8005C0A19 /* MobileNet.mlmodel */,
-				11063F651EC0EECC0033EE6D /* Main.storyboard */,
 				C82A1C951F1809F5005996F6 /* Supporting Files */,
 			);
 			path = "Vision+ML Example";
 			sourceTree = "<group>";
 		};
+		894F5A9180E93FB2519AEE0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0463864141D2ED9BE8FA36FE /* Pods-Vision+ML Example.debug.xcconfig */,
+				6EACF9C4A54F39FB8A6C83FD /* Pods-Vision+ML Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A9563AD0A9557D1000000001 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				A9558E70A9563BA000000001 /* SampleCode.xcconfig */,
 			);
 			name = Configuration;
-			sourceTree = "<group>";
-		};
-		A96664E0A96664B000000001 /* LICENSE */ = {
-			isa = PBXGroup;
-			children = (
-				A9666960A9666AD000000001 /* LICENSE.txt */,
-			);
-			name = LICENSE;
-			path = LICENSE;
 			sourceTree = "<group>";
 		};
 		C82A1C951F1809F5005996F6 /* Supporting Files */ = {
@@ -101,6 +113,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F54C7A83AB48E7DF8D9A3CEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				880F6225690AEB07DF16D687 /* Pods_Vision_ML_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,10 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11063F701EC0EECC0033EE6D /* Build configuration list for PBXNativeTarget "Vision+ML Example" */;
 			buildPhases = (
+				A4BF2E6BF0A0650EEF4E110F /* [CP] Check Pods Manifest.lock */,
 				11063F5A1EC0EECC0033EE6D /* Sources */,
 				11063F5B1EC0EECC0033EE6D /* Frameworks */,
 				11063F5C1EC0EECC0033EE6D /* Resources */,
-				C858E5CB1ECA98CA006C5CAA,
+				9A5F7F9B6452FF61E4D99833 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,37 +181,129 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C03C65F25BF26E500B1CC8D /* Assets.xcassets in Resources */,
+				0CD3FB842583B384009840C7 /* Main.storyboard in Resources */,
 				113695D81EC1151400CA6C43 /* LaunchScreen.storyboard in Resources */,
-				11063F691EC0EECC0033EE6D /* Assets.xcassets in Resources */,
-				11063F671EC0EECC0033EE6D /* Main.storyboard in Resources */,
+				0CC59ED8257D2CE6000E0D59 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A5F7F9B6452FF61E4D99833 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vision+ML Example/Pods-Vision+ML Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/ColorThiefSwift/ColorThiefSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseDatabase/FirebaseDatabase.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseFirestore/FirebaseFirestore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseStorage/FirebaseStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+				"${BUILT_PRODUCTS_DIR}/abseil/absl.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ColorThiefSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseDatabase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseFirestore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageWebPCoder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/absl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vision+ML Example/Pods-Vision+ML Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4BF2E6BF0A0650EEF4E110F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vision+ML Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11063F5A1EC0EECC0033EE6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD3FB8D2584C7E5009840C7 /* CollectionViewHucre.swift in Sources */,
 				C89947DA1F4639D6005C0A19 /* MobileNet.mlmodel in Sources */,
 				11063F741EC0F5270033EE6D /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				11063F641EC0EECC0033EE6D /* ImageClassificationViewController.swift in Sources */,
 				11063F621EC0EECC0033EE6D /* AppDelegate.swift in Sources */,
+				0CC59EB3257D28BA000E0D59 /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11063F651EC0EECC0033EE6D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11063F661EC0EECC0033EE6D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		113695D61EC1151400CA6C43 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -205,7 +318,7 @@
 /* Begin XCBuildConfiguration section */
 		11063F6E1EC0EECC0033EE6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 0463864141D2ED9BE8FA36FE /* Pods-Vision+ML Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -264,7 +377,7 @@
 		};
 		11063F6F1EC0EECC0033EE6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 6EACF9C4A54F39FB8A6C83FD /* Pods-Vision+ML Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -316,7 +429,7 @@
 		};
 		11063F711EC0EECC0033EE6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 0463864141D2ED9BE8FA36FE /* Pods-Vision+ML Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COREML_CODEGEN_LANGUAGE = Swift;
@@ -333,7 +446,7 @@
 		};
 		11063F721EC0EECC0033EE6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9558E70A9563BA000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 6EACF9C4A54F39FB8A6C83FD /* Pods-Vision+ML Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COREML_CODEGEN_LANGUAGE = Swift;

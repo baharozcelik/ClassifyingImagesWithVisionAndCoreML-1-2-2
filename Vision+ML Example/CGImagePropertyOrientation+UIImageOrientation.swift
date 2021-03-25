@@ -1,9 +1,11 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-Core Graphics utility extensions used in the sample code.
-*/
+//
+//  CGImagePropertyOrientation+UIImageOrientation.swift
+//  Vision+ML Example
+//
+//  Created by Bahar on 25.11.2020.
+//  Copyright © 2020 Apple. All rights reserved.
+//
+// CGImageProperties Reference defines constants that represent characteristics of images used by the Image I/O framework.
 
 import UIKit
 import ImageIO
@@ -16,7 +18,7 @@ extension CGImagePropertyOrientation {
      
      - Tag: ConvertOrientation
      */
-    init(_ orientation: UIImageOrientation) {
+    init(_ orientation: UIImage.Orientation) {
         switch orientation {
         case .up: self = .up
         case .upMirrored: self = .upMirrored
